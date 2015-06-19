@@ -38,51 +38,6 @@ svg {
   transition: all 0.5s ease-out;
 }
 
-/*/////////////////////////////////*/
-/* //////// KEYFRAMES ////////// */
-
-/*@keyframes rotate {
-  from {
-    transform: rotate(0deg)
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes top {
-  from {
-    transform: translate(0px, -100px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes left {
-  from {
-    transform: translate(-100px, 0px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes right {
-  from {
-    transform: translate(100px, 100px);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}*/
-
 /*////////////////////*/
 /*////// HOVER //////*/
 
@@ -115,18 +70,6 @@ svg {
 .logo svg {
   position: absolute;
 }
-
-/*.logo svg:first-child {
-  animation: top .5s;
-}
-
-.logo svg:nth-child(2) {
-  animation: left .45s;
-}
-
-.logo svg:last-child {
-  animation: right .5s;
-}*/
 
 
 span:focus ~ .logo {
