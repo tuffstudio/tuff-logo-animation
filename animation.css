@@ -28,9 +28,9 @@ svg {
   height: 80px;
 }
 
-path.top,
-path.left,
-path.right {
+.top path,
+.left path,
+.right path{
   fill: #067195;
 }
 
@@ -41,7 +41,7 @@ path.right {
 /*/////////////////////////////////*/
 /* //////// KEYFRAMES ////////// */
 
-@keyframes rotate {
+/*@keyframes rotate {
   from {
     transform: rotate(0deg)
   }
@@ -81,20 +81,20 @@ path.right {
     transform: translate(0, 0);
     opacity: 1;
   }
-}
+}*/
 
 /*////////////////////*/
 /*////// HOVER //////*/
 
-.logo:hover svg:first-child {
+.logo:hover .top {
   transform: translate(2px, 2px) scale(0.95);
 }
 
-.logo:hover svg:nth-child(2) {
+.logo:hover .left {
   transform: translate(2px, -2px);
 }
 
-.logo:hover svg:last-child {
+.logo:hover .right {
   transform: translate(-1px, -1px) scale(0.94);
 }
 
@@ -104,9 +104,9 @@ path.right {
   cursor: pointer;
 }
 
-.logo:hover path.top,
-.logo:hover path.left,
-.logo:hover path.right {
+.logo:hover .top path,
+.logo:hover .left path,
+.logo:hover .right path{
   fill: #0194C5;
 }
 
@@ -134,17 +134,17 @@ span:focus ~ .logo {
   transform: rotate(0deg);
 }
 
-span:focus ~ .logo svg:first-child {
+span:focus ~ .logo .top {
   transform: translate(0px, -100px);
   opacity: 0;
 }
 
-span:focus ~ .logo svg:nth-child(2) {
+span:focus ~ .logo .left {
   transform: translate(-100px, 0px);
   opacity: 0;
 }
 
-span:focus ~ .logo svg:last-child {
+span:focus ~ .logo .right {
   transform: translate(100px, 100px);
   opacity: 0;
 }
