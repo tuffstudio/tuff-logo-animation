@@ -1,3 +1,4 @@
-<strong>SVG Logo CSS3 animation</strog>
+# SVG Logo CSS3 animation
 
-<small>tuff-studio.com 2015</small>
+
+tuff-studio.com 2015
