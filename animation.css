@@ -1,7 +1,45 @@
+
+/*/////////////////////////////////*/
+/*/////////// GENERAL /////////////*/
+
 body {
   background-color: #1a1a1a;
 }
-/* //////// ANIMATIONS ////////// */
+
+h1,
+span {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  left: 50px
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 80px auto;
+  transition: transform 1s ease;
+  transform: rotate(360deg);
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+}
+
+path.top,
+path.left,
+path.right {
+  fill: #067195;
+}
+
+.logo * {
+  transition: all 0.5s ease-out;
+}
+
+/*/////////////////////////////////*/
+/* //////// KEYFRAMES ////////// */
 
 @keyframes rotate {
   from {
@@ -45,28 +83,8 @@ body {
   }
 }
 
-.logo {
-  width: 80px;
-  height: 80px;
-  margin: 80px auto;
-  transition: transform 1s ease;
-  transform: rotate(360deg);
-}
-
-svg {
-  width: 80px;
-  height: 80px;
-}
-
-.top,
-.left,
-.right {
-  fill: #067195;
-}
-
-.logo * {
-  transition: all 0.5s ease-out;
-}
+/*////////////////////*/
+/*////// HOVER //////*/
 
 .logo:hover svg:first-child {
   transform: translate(2px, 2px) scale(0.95);
@@ -86,17 +104,19 @@ svg {
   cursor: pointer;
 }
 
-.logo:hover .top,
-.logo:hover .left,
-.logo:hover .right {
+.logo:hover path.top,
+.logo:hover path.left,
+.logo:hover path.right {
   fill: #0194C5;
 }
+
+/*///////////////////////*/
 
 .logo svg {
   position: absolute;
 }
 
-.logo svg:first-child {
+/*.logo svg:first-child {
   animation: top .5s;
 }
 
@@ -106,16 +126,8 @@ svg {
 
 .logo svg:last-child {
   animation: right .5s;
-}
+}*/
 
-h1,
-span {
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 50px;
-  left: 50px
-}
 
 span:focus ~ .logo {
   transition: all 1s ease;
