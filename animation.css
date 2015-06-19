@@ -68,15 +68,15 @@ svg {
   transition: all 0.5s ease-out;
 }
 
-.logo:hover div:first-child {
+.logo:hover svg:first-child {
   transform: translate(2px, 2px) scale(0.95);
 }
 
-.logo:hover div:nth-child(2) {
+.logo:hover svg:nth-child(2) {
   transform: translate(2px, -2px);
 }
 
-.logo:hover div:last-child {
+.logo:hover svg:last-child {
   transform: translate(-1px, -1px) scale(0.94);
 }
 
@@ -92,19 +92,19 @@ svg {
   fill: #0194C5;
 }
 
-.logo div {
+.logo svg {
   position: absolute;
 }
 
-.logo div:first-child {
+.logo svg:first-child {
   animation: top .5s;
 }
 
-.logo div:nth-child(2) {
+.logo svg:nth-child(2) {
   animation: left .45s;
 }
 
-.logo div:last-child {
+.logo svg:last-child {
   animation: right .5s;
 }
 
@@ -122,17 +122,17 @@ span:focus ~ .logo {
   transform: rotate(0deg);
 }
 
-span:focus ~ .logo div:first-child {
+span:focus ~ .logo svg:first-child {
   transform: translate(0px, -100px);
   opacity: 0;
 }
 
-span:focus ~ .logo div:nth-child(2) {
+span:focus ~ .logo svg:nth-child(2) {
   transform: translate(-100px, 0px);
   opacity: 0;
 }
 
-span:focus ~ .logo div:last-child {
+span:focus ~ .logo svg:last-child {
   transform: translate(100px, 100px);
   opacity: 0;
 }
